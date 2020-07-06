@@ -1,0 +1,96 @@
+<html>
+    <head lang="ko">
+        <meta charset="utf-8">
+        <title>웹 프로그래밍 1주차</title>
+        <link rel = "stylesheet" href="css2.css"></link>
+    </head>
+
+    <body>
+        <h2>학생관리 시스템</h2>
+        <ol><!--순서가 있음 ul로 사용하면 순서없이 모양으로-->
+            <li><a href="https://www.naver.com" title="클릭!"> 학생정보 및 학점관리</a></li>
+            <li><a href="https://www.daum.net" title="클릭!">학생입 휴학 관리</a></li>
+            <li>학생 기숙사 관리</li>
+            <li>환경설정</li>
+        </ol>
+        <br>
+        <table id = "table1">
+        <thead>
+            <tr id="head">
+                <td class="chk">선택</td>
+                <td class="name">이름</td> 
+                <td class="number">학번</td>
+                <td class="age">나이</td>
+                <td class="grade">학점</td>
+                <td class="exp">비고</td>
+            </tr>
+        </thead>
+        <tbody id="tbody1">
+            <tr class = "content">
+                <td><input class = "chk" type="checkbox"></td>
+                <td>곽미래</td>
+                <td>201902650</td>
+                <td>21</td>
+                <td class = "grade">A+</td>
+                <td>도레미래도레</td>
+            </tr>
+            <tr class = "content">
+                <td><input class = "chk" type="checkbox"></td>
+                <td>김혜진</td>
+                <td>201902679</td>
+                <td>21</td>
+                <td class = "grade" >A+</td>
+                <td>우주수첩</td>
+            </tr>
+            <tr class = "content">
+                <td><input class = "chk" type="checkbox"></td>
+                <td>김유진</td>
+                <td>2019</td>
+                <td>21</td>
+                <td class = "grade">A+</td>
+                <td>구구</td>
+            </tr>
+        </tbody>  
+        </table>
+
+        <br>
+        <br>
+
+        <table id="table1">
+            <thead>
+                <tr id="first">
+                    <td class="chk2">선택</td>
+                    <td class="name2">이름</td> 
+                    <td class="number2">학번</td>
+                    <td class="age2">나이</td>
+                    <td class="grade2">학점</td>
+                    <td class="exp2">비고</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input class="chk2" type="checkbox"></td>
+                    <td><input id="input1" type="text"></td>
+                    <td><input id="input2" type="text"></td>
+                    <td><input id="input3" type="text"></td>
+                    <td><input id="input4" type="text"></td>
+                    <td><input id="input5" type="text"></td>
+                </tr>
+            </tbody>
+        </table>
+        <h1>필수 입력 항목 => (이름/학번/나이/학점)</h1>
+        <br/>
+        <input id = "addStudentBt" type="button" value="학생 추가"></input>
+        <input id = "deleteStudentBt" type="button" value="학생 삭제"></input>
+
+        <p>
+            평균학점 : <span id="avgGrade"></span><br><br>
+      
+            총 인원 : <span id="numberOfStudent"></span><br><br>
+        </p>
+        <br>
+        <br>
+        <!-- <iframe src="http://plus.cnu.ac.kr/html/kr/intro.html" frameborder="0"></iframe> -->
+    </body>
+    <script src="js/studentjs.js"></script>
+</html>

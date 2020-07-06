@@ -1,0 +1,49 @@
+li{
+    margin-bottom: 15px;
+}
+
+#head{
+    background-color: rgb(253, 236, 207);
+}
+
+#head:hover{
+    background-color: pink;
+}
+h1{
+    text-align: start;
+    font-size: small;
+}
+td{
+    border: 3px dashed rgb(8, 158, 218);
+    text-align: center;
+    padding: 14px;
+}
+
+table, tr{
+    border: 3px dashed rgb(8, 158, 218);
+    border-collapse: collapse;
+}
+input{
+    width: 90;
+    font-size: medium;
+}
+.chk, .chk2{
+    width : 90px;
+}
+
+.name, .name2{
+    width: 90px;
+}
+.age, .age2{
+    width: 100px;
+}
+.grade, .grade2{
+    width: 90px;
+}
+.exp, exp2{
+    width: 150px;
+}
+iframe{
+    width: 740px;
+    height: 500px;
+}
